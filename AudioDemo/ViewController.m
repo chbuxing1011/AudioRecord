@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "lame.h"
-
+#import "VerticalAlignmentLabel.h"
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define NAVBAR_HEIGHT 40
@@ -169,6 +169,25 @@
     [self.view addSubview:timeLabel];
     [self.view addSubview:recordButton];
     [self.view addSubview:recordLabel];
+    
+    //自定义label
+    VerticalAlignmentLabel *lbl_mylabel = [[VerticalAlignmentLabel alloc] initWithFrame:CGRectMake(20, 370, 150, 180)];
+
+    lbl_mylabel.backgroundColor = [UIColor lightGrayColor];
+    lbl_mylabel.textAlignment = NSTextAlignmentCenter;
+
+    lbl_mylabel.lineBreakMode = NSLineBreakByWordWrapping;
+    lbl_mylabel.numberOfLines = 0;
+
+//    [lbl_mylabel setVerticalAlignment:VerticalAlignmentBottom];
+    [self.view addSubview:lbl_mylabel];
+    
+    //设置偏移量
+    NSString *str = @"今天天气不错啊，周末去旅游";
+    NSMutableAttributedString * attribute = [[NSMutableAttributedString alloc]initWithString:str];
+    [attribute addAttribute:NSBaselineOffsetAttributeName value:@(-30) range:NSMakeRange(0,[attribute length] )];
+    lbl_mylabel.attributedText = attribute;
+
 }
 
 - (void)transformCAFToMP3 {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680488451B46162500DE4AB3 /* VerticalAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 680488441B46162500DE4AB3 /* VerticalAlignmentLabel.m */; };
+		680488491B462FCF00DE4AB3 /* CircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 680488481B462FCF00DE4AB3 /* CircleAnimation.m */; };
+		6804884C1B46306000DE4AB3 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804884B1B46306000DE4AB3 /* ProgressViewController.m */; };
+		6804884F1B4633F700DE4AB3 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804884E1B4633F700DE4AB3 /* CircleView.m */; };
 		DFBB06851AB9CACB0002FE91 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBB06841AB9CACB0002FE91 /* libmp3lame.a */; };
 		DFC158971A8F39850032659C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC158961A8F39850032659C /* main.m */; };
 		DFC1589A1A8F39850032659C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC158991A8F39850032659C /* AppDelegate.m */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		680488431B46162500DE4AB3 /* VerticalAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalAlignmentLabel.h; sourceTree = "<group>"; };
+		680488441B46162500DE4AB3 /* VerticalAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalAlignmentLabel.m; sourceTree = "<group>"; };
+		680488471B462FCF00DE4AB3 /* CircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimation.h; sourceTree = "<group>"; };
+		680488481B462FCF00DE4AB3 /* CircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimation.m; sourceTree = "<group>"; };
+		6804884A1B46306000DE4AB3 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		6804884B1B46306000DE4AB3 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		6804884D1B4633F700DE4AB3 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		6804884E1B4633F700DE4AB3 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		DFBB06831AB9CACB0002FE91 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		DFBB06841AB9CACB0002FE91 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		DFC158911A8F39850032659C /* AudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +94,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680488461B462FC600DE4AB3 /* ColorProgress */ = {
+			isa = PBXGroup;
+			children = (
+				680488471B462FCF00DE4AB3 /* CircleAnimation.h */,
+				680488481B462FCF00DE4AB3 /* CircleAnimation.m */,
+				6804884A1B46306000DE4AB3 /* ProgressViewController.h */,
+				6804884B1B46306000DE4AB3 /* ProgressViewController.m */,
+				6804884D1B4633F700DE4AB3 /* CircleView.h */,
+				6804884E1B4633F700DE4AB3 /* CircleView.m */,
+			);
+			path = ColorProgress;
+			sourceTree = "<group>";
+		};
 		DFBB06861AB9CAD20002FE91 /* lame */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +138,7 @@
 		DFC158931A8F39850032659C /* AudioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				680488461B462FC600DE4AB3 /* ColorProgress */,
 				DFC158981A8F39850032659C /* AppDelegate.h */,
 				DFC158991A8F39850032659C /* AppDelegate.m */,
 				DFC1589B1A8F39850032659C /* ViewController.h */,
@@ -121,6 +147,8 @@
 				DFC158A11A8F39850032659C /* Images.xcassets */,
 				DFC158A31A8F39850032659C /* LaunchScreen.xib */,
 				DFC158941A8F39850032659C /* Supporting Files */,
+				680488431B46162500DE4AB3 /* VerticalAlignmentLabel.h */,
+				680488441B46162500DE4AB3 /* VerticalAlignmentLabel.m */,
 			);
 			path = AudioDemo;
 			sourceTree = "<group>";
@@ -266,8 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC1589D1A8F39850032659C /* ViewController.m in Sources */,
+				6804884C1B46306000DE4AB3 /* ProgressViewController.m in Sources */,
 				DFC1589A1A8F39850032659C /* AppDelegate.m in Sources */,
 				DFC158971A8F39850032659C /* main.m in Sources */,
+				6804884F1B4633F700DE4AB3 /* CircleView.m in Sources */,
+				680488491B462FCF00DE4AB3 /* CircleAnimation.m in Sources */,
+				680488451B46162500DE4AB3 /* VerticalAlignmentLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
