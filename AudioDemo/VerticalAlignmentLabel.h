@@ -20,6 +20,7 @@ typedef enum
 {
 @private
     VerticalAlignment _verticalAlignment;
+    
 }
 
 @property (nonatomic) VerticalAlignment verticalAlignment;
